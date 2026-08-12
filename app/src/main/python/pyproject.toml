@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsb-dsp-voice"
+version = "0.1.0"
+description = "Voice / unvoice / silence detection DSP module for native Android integration and desktop use."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
+[tool.setuptools.packages.find]
+include = ["main*"]
